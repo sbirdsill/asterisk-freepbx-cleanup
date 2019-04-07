@@ -16,7 +16,8 @@ service fwconsole stop
 service freepbx stop
 service dahdi stop
 echo "Removing Asterisk and its config files..."
-apt-get -y purge "asterisk*"
+apt-get purge "asterisk*" -y
+apt-get purge "dahdi*" -y
 rm -rf /etc/asterisk
 rm -f /etc/dahdi.conf
 rm -rf /var/log/asterisk
