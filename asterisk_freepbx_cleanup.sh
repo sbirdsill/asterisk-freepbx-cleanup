@@ -51,6 +51,7 @@ userdel -r -f asterisk
 echo "Done! Please remember to check if any errors occured."
 }
 
+# https://stackoverflow.com/a/226724
 while true; do
     read -p "This will completely remove Asterisk/FreePBX along with its associated files. Continue? [Y/N]" yn
     case $yn in
